@@ -1,3 +1,4 @@
+import 'package:flight_booking_ui/tickets/bottom_bar.dart';
 import 'package:flutter/material.dart';
 
 class AppWidget extends StatelessWidget {
@@ -35,7 +36,7 @@ class AppWidget extends StatelessWidget {
           ),
         ),
       ),
-      // home: const BottomBar(),
+      home: const BottomBar(),
     );
   }
 }
