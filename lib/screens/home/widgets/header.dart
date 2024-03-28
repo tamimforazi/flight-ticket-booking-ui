@@ -1,3 +1,4 @@
+import 'package:flight_booking_ui/utils/app_style.dart';
 import 'package:gap/gap.dart';
 import 'package:flutter/material.dart';
 
@@ -16,12 +17,12 @@ class Header extends StatelessWidget {
             children: const [
               Text(
                 'Good Morning',
-                // style: Styles.headLineStyle3,
+                style: Styles.headLineStyle3,
               ),
               Gap(5),
               Text(
                 'Book Tickets',
-                // style: Styles.headLineStyle1,
+                style: Styles.headLineStyle1,
               ),
             ],
           ),
@@ -30,7 +31,7 @@ class Header extends StatelessWidget {
             width: 60,
             clipBehavior: Clip.antiAliasWithSaveLayer,
             child: Image.asset(
-              'assets/images/img_1.png',
+              'images/img_1.png',
               fit: BoxFit.cover,
             ),
             decoration: BoxDecoration(

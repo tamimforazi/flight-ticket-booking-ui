@@ -1,4 +1,7 @@
 import 'package:flight_booking_ui/screens/home/widgets/header.dart';
+import 'package:flight_booking_ui/screens/home/widgets/search_bar.dart';
+import 'package:flight_booking_ui/screens/home/widgets/upcoming_flight.dart';
+import 'package:flight_booking_ui/utils/extention.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -18,8 +21,15 @@ class _HomeScreenState extends State<HomeScreen> {
         controller: ScrollController(),
         child: Column(
           children: [
-            // Gap(getPadding(context)),
+            Gap(getPadding(context) * 1.8),
             const Header(),
+            Gap(getPadding(context) / 2),
+            const CustomSearchBar(),
+            Gap(getPadding(context) / 2),
+            const UpComingFlights(),
+            Gap(getPadding(context) / 2),
+            // const Hotels(),
+            Gap(getPadding(context) / 2),
           ],
         ),
       ),
